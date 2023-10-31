@@ -10,4 +10,12 @@
     cursor: pointer;
     display: inline-block;
     transition: all 0.3s;
+
+    &_gray {
+        border-radius: 12px;
+        border: 1px solid $LS_GRAY_5;
+        background: $LS_WHITE;
+        color: $LS_GRAY_1;
+        padding: 12px 24px;
+    }
 }

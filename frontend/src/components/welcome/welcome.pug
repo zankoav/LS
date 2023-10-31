@@ -1,0 +1,6 @@
+mixin welcome(title, description)
+    section.welcome
+        h1.welcome__title=title
+        p.welcome__description=description
+        +button('Узнать стоимость')
+        img(src=require('@img/welcome/welcome.svg'), alt=title)

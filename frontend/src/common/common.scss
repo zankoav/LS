@@ -1,6 +1,10 @@
 @import './constants';
 @import './reset';
 
+body {
+    background-color: $LS_GRAY_6;
+}
+
 // MARGIN START
 
 .mb-16 {

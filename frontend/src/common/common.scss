@@ -2,6 +2,7 @@
 @import './reset';
 
 body {
+    font-family: Roboto, sans-serif;
     background-color: $LS_GRAY_6;
 }
 
@@ -33,6 +34,10 @@ body {
 
 .mb-64 {
     margin-bottom: 64px;
+}
+
+.mb-74 {
+    margin-bottom: 74px;
 }
 
 .mb-88 {

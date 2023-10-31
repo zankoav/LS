@@ -2,4 +2,8 @@
 
 .header {
     background-color: red;
+
+    &__title {
+        @include font-h1;
+    }
 }

@@ -1,185 +1,85 @@
 // COLORS START:
-$WHITE: #ffffff;
+$LS_WHITE: #ffffff;
+
+$LS_GRAY_1: #333333;
+$LS_GRAY_2: #9299a2;
+$LS_GRAY_3: #dddfe0;
+$LS_GRAY_4: #eaecee;
+$LS_GRAY_5: #777777;
+$LS_GRAY_6: #f6f7f8;
+$LS_GRAY_7: #cfd0d0;
+
+$LS_BLUE_1: #336fee;
+$LS_BLUE_2: #e2e8f0;
+$LS_BLUE_3: #ecf1f7;
+
+$LS_YELLOW_1: #ffdd2d;
 
 // COLORS END;
 
-// MEDIA SCREENS START:
-$MEDIA: (
-    SM: 768px,
-    MD: 1024px,
-    LG: 1280px,
-    XL: 1366px,
-    XLL: 1440px,
-    HD: 1920px,
-    XHD: 2560px
-);
-
-@mixin sm {
-    @media (min-width: map_get($MEDIA, SM)) {
-        @content;
-    }
-}
-
-@mixin md {
-    @media (min-width: map_get($MEDIA, MD)) {
-        @content;
-    }
-}
-
-@mixin lg {
-    @media (min-width: map_get($MEDIA, LG)) {
-        @content;
-    }
-}
-
-@mixin xl {
-    @media (min-width: map_get($MEDIA, XL)) {
-        @content;
-    }
-}
-
-@mixin xll {
-    @media (min-width: map_get($MEDIA, XLL)) {
-        @content;
-    }
-}
-
-@mixin hd {
-    @media (min-width: map_get($MEDIA, HD)) {
-        @content;
-    }
-}
-
-@mixin xhd {
-    @media (min-width: map_get($MEDIA, XHD)) {
-        @content;
-    }
-}
-// MEDIA SCREENS END;
-
 // TITLES START
 
-@mixin h1 {
-    font-size: 40px;
-    font-weight: 600;
-    color: $GRAY_1;
+@mixin font-h1 {
+    color: $LS_GRAY_1;
+    font: 700 44px/1 Roboto sans-serif;
+}
+
+@mixin font-h2 {
+    color: $LS_GRAY_1;
+    font: 700 24px/1 Roboto sans-serif;
+}
+
+@mixin font-h3 {
+    color: $LS_GRAY_1;
+    font: 600 24px/1 Roboto sans-serif;
+}
+
+@mixin font-h4 {
+    color: $LS_GRAY_1;
+    font: 700 18px/1 Roboto sans-serif;
+}
+
+@mixin font-h5 {
+    color: $LS_GRAY_1;
+    font: 600 18px/1 Roboto sans-serif;
+}
+
+@mixin font-p1 {
+    color: $LS_GRAY_1;
+    font: 400 18px/24px Roboto sans-serif;
+}
+
+@mixin font-p2 {
+    color: $LS_GRAY_5;
+    font: 300 15px/1 Roboto sans-serif;
+}
+
+@mixin font-p3 {
+    color: $LS_GRAY_1;
+    font: 400 15px/24px Roboto sans-serif;
+}
+
+@mixin font-p4 {
+    color: $LS_GRAY_2;
+    font: 400 13px/1 Roboto sans-serif;
+}
+
+@mixin font-p5 {
+    color: $LS_GRAY_2;
+    font: 400 11px/1 Roboto sans-serif;
+}
+
+@mixin font-p6 {
+    color: $LS_BLUE_1;
+    font: 400 18px/24px Roboto sans-serif;
 }
 
 // TITLES END
 
 // CONTAINER START:
 @mixin container() {
-    $MAX-WIDTH_LG: 1236px;
-    $MAX-WIDTH_HD: calc(100% - 2rem);
-
-    .container {
-        padding: 0 1.5rem;
-        position: relative;
-        width: 100%;
-
-        @include lg {
-            max-width: $MAX-WIDTH_LG;
-            padding: 0 1rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        &_hd {
-            @include hd {
-                max-width: $MAX-WIDTH_HD;
-            }
-        }
-    }
+    max-width: 1062px;
+    margin-left: auto;
+    margin-right: auto;
 }
 // CONTAINER END;
-
-// EDITOR START:
-@mixin editor() {
-    line-height: 1.5;
-
-    h1 {
-        font-size: 2em;
-        margin-bottom: 0.67em;
-    }
-    h2 {
-        font-size: 1.5em;
-        margin-bottom: 0.75em;
-    }
-    h3 {
-        font-size: 1.17em;
-        margin-bottom: 0.83em;
-    }
-    h5 {
-        font-size: 0.83em;
-        margin-bottom: 1.5em;
-    }
-    h6 {
-        font-size: 0.75em;
-        margin-bottom: 1.67em;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-weight: 600;
-    }
-
-    p {
-        display: block;
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
-
-    ul {
-        display: block;
-        list-style-type: disc;
-        margin-bottom: 1em;
-        padding-left: 40px;
-    }
-
-    ol {
-        display: block;
-        list-style-type: decimal;
-        margin-bottom: 1em;
-        padding-left: 40px;
-    }
-
-    b,
-    strong {
-        font-weight: 600;
-    }
-
-    i {
-        font-style: italic;
-    }
-
-    a {
-        color: $PRIMARY_1;
-    }
-
-    table,
-    th,
-    td {
-        border: 1px solid #000;
-        border-collapse: collapse;
-    }
-
-    th,
-    td {
-        padding: 5px;
-        text-align: left;
-    }
-
-    sup {
-        font-size: smaller;
-        vertical-align: super;
-    }
-
-    sub {
-        font-size: smaller;
-        vertical-align: sub;
-    }
-}
-// EDITOR END;

@@ -82,4 +82,7 @@ $LS_YELLOW_1: #ffdd2d;
     margin-left: auto;
     margin-right: auto;
 }
-// CONTAINER END;
+@mixin container-mobile(){
+    padding: 8px;
+}
+// CONTAINER END; 

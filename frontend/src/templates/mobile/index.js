@@ -1,3 +1,5 @@
 import './../../common/common.scss'
+import './../../components/button/button'
 import './../../components/header/header'
+import './../../components/welcome-mobile/welcome-mobile'
 import './../../components/footer/footer'

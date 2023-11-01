@@ -9,11 +9,13 @@ $LS_GRAY_5: #777777;
 $LS_GRAY_6: #f6f7f8;
 $LS_GRAY_7: #cfd0d0;
 
-$LS_BLUE_1: #336fee;
+$LS_BLUE_1: #4e89d1;
 $LS_BLUE_2: #e2e8f0;
 $LS_BLUE_3: #ecf1f7;
 
 $LS_YELLOW_1: #ffdd2d;
+
+$LS_RED_1: #fe4e4e;
 
 // COLORS END;
 
@@ -51,7 +53,7 @@ $LS_YELLOW_1: #ffdd2d;
 
 @mixin font-p2 {
     color: $LS_GRAY_5;
-    font: 300 15px/1 Roboto;
+    font: 300 15px/18px Roboto;
 }
 
 @mixin font-p3 {
@@ -82,7 +84,7 @@ $LS_YELLOW_1: #ffdd2d;
     margin-left: auto;
     margin-right: auto;
 }
-@mixin container-mobile(){
+@mixin container-mobile() {
     padding: 8px;
 }
-// CONTAINER END; 
+// CONTAINER END;

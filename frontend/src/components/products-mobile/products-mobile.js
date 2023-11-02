@@ -1,0 +1,1 @@
+import './products-mobile.scss'

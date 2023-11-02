@@ -1,0 +1,19 @@
+@import './../../common/constants';
+
+.products-mobile {
+    @include container;
+    text-align: center;
+
+    &__title {
+        @include font-h2;
+    }
+
+
+    &__column {
+        padding-left: 8px;
+        padding-right: 8px;
+        max-width: 100%;
+        flex: 1 0 50%;
+        flex-direction: column;
+    }
+}

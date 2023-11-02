@@ -1,0 +1,8 @@
+mixin product-mobile(model, dark_blue)
+    - var resultClass = dark_blue ? 'product-mobile product-mobile_dark-blue': 'product-mobile';
+    div(class=resultClass)
+            img.product-mobile__icon.mb-40(src=model.image, alt=model.title)
+            h3.product-mobile__title.mb-16=model.title
+            p.product-mobile__description.mb-32=model.description
+            .product-mobile__button
+                +button-gray('Узнать стоимость')

@@ -10,14 +10,14 @@ headerItems.forEach((item) => {
             }
         })
 
-        if (this.classList.contains('pricing__header-item__primary')) {
+        if (this.classList.contains('pricing__header-item_primary')) {
             document
                 .querySelector('.pricing__content_primary')
                 .classList.add('pricing__content_active')
             document
                 .querySelector('.pricing__content_secondary')
                 .classList.remove('pricing__content_active')
-        } else if (this.classList.contains('pricing__header-pricing__secondary')) {
+        } else if (this.classList.contains('pricing__header-item_secondary')) {
             document
                 .querySelector('.pricing__content_primary')
                 .classList.remove('pricing__content_active')

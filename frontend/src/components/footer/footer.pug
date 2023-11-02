@@ -1,2 +1,13 @@
 mixin footer
-    footer.footer Footer
+    footer.footer
+        .footer__top 
+            .footer__top-container
+                a.footer__logo(href="/") Lightning Soft
+                .footer__phone-wrapper 
+                    a.footer__phone(href="tel:80295558386") 8 029 555-83-86
+                    .footer__phone-label Для звонков по Беларуси
+        .footer__bottom 
+            .footer__bottom-container
+                .footer__copy © 2020—2023, ООО «Лайтнинг Софт»
+                a(href="https://t.me/zanko_av" class="footer__telegram")
+                    img(src=require('@img/icons/telegram-gray.svg'), class='footer__telegram-icon')

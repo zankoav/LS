@@ -1,12 +1,13 @@
-mixin header()
+mixin header(showMenu)
     header.header
         .header__container
             a(href="/", class="header__logo") Lightning Soft
-            nav.header__menu 
-                a(href="#products" class="header__menu-item") Наш продукт
-                a(href="#ordering" class="header__menu-item") Порядок сотрудничества
-                a(href="#pricing" class="header__menu-item") Стоимость сайта
-                a(href="#faq" class="header__menu-item") Вопрос-ответ
+            if showMenu
+                nav.header__menu 
+                    a(href="#products" class="header__menu-item") Наш продукт
+                    a(href="#ordering" class="header__menu-item") Порядок сотрудничества
+                    a(href="#pricing" class="header__menu-item") Стоимость сайта
+                    a(href="#faq" class="header__menu-item") Вопрос-ответ
             a(href="tel:375295558386" class="header__phone") +375 29 555 83 86
             a(href="https://t.me/zanko_av" class="header__telegram")
                 img(src=require('@img/icons/telegram.svg'), class='header__telegram-icon')

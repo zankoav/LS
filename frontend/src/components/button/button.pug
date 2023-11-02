@@ -1,6 +1,6 @@
-mixin button(title)
-    .button= title
+mixin button(title, link)
+    a.button(href=link)= title
 
 
-mixin button-gray(title)
-    .button.button_gray= title
+mixin button-gray(title, link, type)
+    a.button.button_gray(href=link, data-type=type)= title 

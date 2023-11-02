@@ -1,4 +1,4 @@
-import './../../common/common.scss'
+import './../../common/common-desktop.scss'
 import './../../components/button/button'
 import './../../components/header/header'
 import './../../components/loader/loader'

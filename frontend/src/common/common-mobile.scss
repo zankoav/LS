@@ -40,15 +40,17 @@ body {
     margin-bottom: 74px;
 }
 
-.mb-88 {
-    margin-bottom: 88px;
-}
-
-.mt-128 {
-    margin-top: 128px;
-}
-
 // MARGIN END
+
+// PADDING START
+.pt-88 {
+    padding-top: 88px;
+}
+
+.pt-128 {
+    padding-top: 128px;
+}
+// PADDING END
 
 @keyframes fade-in {
     0% {

@@ -6,6 +6,9 @@
 
     &__title {
         @include font-h2;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__description {

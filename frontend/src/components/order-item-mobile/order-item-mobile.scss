@@ -13,7 +13,8 @@
         border-radius: 14px;
         background-color: $LS_YELLOW_1;
         @include font-h2;
-        margin: 0px -28px 0 0;
+        margin: 8px -28px 0 0;
+        position: relative;
         z-index: 1;
     }
 

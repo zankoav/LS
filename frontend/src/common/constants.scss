@@ -28,12 +28,12 @@ $LS_RED_1: #fe4e4e;
 
 @mixin font-h2 {
     color: $LS_GRAY_1;
-    font: 700 24px/1 Roboto;
+    font: 700 24px/28px Roboto;
 }
 
 @mixin font-h3 {
     color: $LS_GRAY_1;
-    font: 600 24px/1 Roboto;
+    font: 600 24px/28px Roboto;
 }
 
 @mixin font-h4 {

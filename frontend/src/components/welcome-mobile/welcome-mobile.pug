@@ -1,8 +1,8 @@
 mixin welcome-mobile(title, description)
     section.welcome-mobile
-        h1.welcome-mobile__title.mb-24=title
+        h1.welcome-mobile__title.mb-24=title 
         p.welcome-mobile__description.mb-32=description
         .welcome-mobile__button.mb-32
             +button('Узнать стоимость')
-        .welcome-mobile__image.mb-32
+        .welcome-mobile__image
             img.welcome-mobile__icon(src=require('@img/welcome/welcome-mobile.svg'), alt=title)

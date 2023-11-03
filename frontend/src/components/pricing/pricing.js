@@ -38,16 +38,17 @@ document.querySelectorAll('[data-required="yes"]').forEach((field) => {
 const pricingFooter = document.querySelector('.pricing__content-footer')
 const pricingButton = pricingFooter.querySelector('.button')
 
-pricingButton.onclick = () => {
+pricingButton.onclick = async () => {
     let error = false
-    let formData = {}
+    const data = new FormData()
+    data.append('action', 'post_message')
 
     const pricingContent = document.querySelector('.pricing__content_active')
     const requiredFields = pricingContent.querySelectorAll('[data-required="yes"]')
 
     requiredFields.forEach((field) => {
         const input = field.querySelector('.input-field__input')
-        formData[input.name] = input.value
+        data.append(input.name, input.value)
         if (!input.value) {
             field
                 .querySelector('.input-field__error-message')
@@ -57,20 +58,22 @@ pricingButton.onclick = () => {
     })
 
     const addedField = pricingContent.querySelector('.textarea-field__textarea')
-    formData[addedField.name] = addedField.value
+    data.append(addedField.name, addedField.value)
 
     if (!error) {
-        console.log('formData', formData)
-
         clearPricingCards()
         document.querySelector('.pricing__card_spinner').classList.add('pricing__card_active')
-        setTimeout(() => {
+        try {
+            await fetch(landing_ajax, {
+                method: 'POST',
+                credentials: 'same-origin',
+                body: data
+            })
             clearPricingCards()
             document.querySelector('.pricing__card_thank-you').classList.add('pricing__card_active')
-        }, 5000)
-        // show spinner
-        // send data to server
-        // show thank you
+        } catch (error) {
+            console.error(error)
+        }
     }
 }
 

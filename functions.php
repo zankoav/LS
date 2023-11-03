@@ -28,25 +28,34 @@ function page_scripts()
     $runtime = $assets->asset('runtime.js');
     wp_enqueue_script('runtime', $runtime);
 
-    $vendors = $assets->asset('vendors.js');
-    wp_enqueue_script('vendors', $vendors);
-
-
-    if (is_page_template('template-page-home.php')) {
-        $target = $assets->asset('index.js');
-        wp_enqueue_script('home', $target);
-    } else if (is_404()) {
-        $target = $assets->asset('p404.js');
-        wp_enqueue_script('p404', $target);
+    if (wp_is_mobile()) {
+        if (is_page_template('template-page-home.php')) {
+            $target = $assets->asset('mobile_index.js');
+            wp_enqueue_script('mobile_index', $target);
+        } else if (is_404()) {
+            $target = $assets->asset('mobile_p404.js');
+            wp_enqueue_script('mobile_p404', $target);
+        }
+    } else {
+        if (is_page_template('template-page-home.php')) {
+            $target = $assets->asset('desktop_index.js');
+            wp_enqueue_script('desktop_index', $target);
+        } else if (is_404()) {
+            $target = $assets->asset('desktop_p404.js');
+            wp_enqueue_script('desktop_p404', $target);
+        }
     }
+
     add_filter('script_loader_tag', 'change_my_script', 10, 3);
 
     function change_my_script($tag, $handle, $src)
     {
 
         if (
-            'p404' === $handle or
-            'home' === $handle
+            'desktop_index' === $handle or
+            'desktop_p404' === $handle or
+            'mobile_index' === $handle or
+            'mobile_p404' === $handle
         ) {
             return str_replace(' src', ' defer src', $tag);
         }

@@ -85,6 +85,7 @@ $LS_RED_1: #fe4e4e;
     margin-right: auto;
 }
 @mixin container-mobile() {
-    padding: 0px 8px 0px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 // CONTAINER END;

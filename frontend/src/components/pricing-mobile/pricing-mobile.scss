@@ -5,13 +5,14 @@
     text-align: center;
 
     &__title {
-        @include font-h1;
+        @include font-h2;
     }
+
 
     &__card {
         background-color: $LS_WHITE;
         border-radius: 24px;
-        padding: 0px 12px 32px 12px;
+        padding: 40px 12px 32px 12px;
         display: none;
 
         &_active {
@@ -31,7 +32,6 @@
     }
 
     &__header {
-        margin-top: 40px;
         display: flex;
         justify-content: center;
         margin-bottom: 24px;
@@ -64,12 +64,17 @@
     }
 
     
+    &__content-footer {
+        .button{
+            width:100%;
+        }
+    }
 
     &__content-footer-text {
         @include font-p2;
         text-align: center;
         color: $LS_GRAY_5;
-        margin-bottom:32px;
+        margin-bottom:24px;
     }
 
     &__card-title {
@@ -79,4 +84,5 @@
     &__card-description {
         @include font-p2;
     }
+
 }

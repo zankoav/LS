@@ -66,19 +66,17 @@ pricingButton.onclick = async () => {
         clearPricingCards()
         document
             .querySelector('.pricing-mobile__card_spinner')
-            .classList.add('pricing__card_active')
+            .classList.add('pricing-mobile__card_active')
         try {
-            const response = await fetch(landing_ajax, {
+            await fetch(landing_ajax, {
                 method: 'POST',
                 credentials: 'same-origin',
                 body: data
             })
-            const responseData = await response.json()
-            console.log('responseData', responseData)
             clearPricingCards()
             document
                 .querySelector('.pricing-mobile__card_thank-you')
-                .classList.add('pricing__card_active')
+                .classList.add('pricing-mobile__card_active')
         } catch (error) {
             console.error(error)
         }

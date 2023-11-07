@@ -46,7 +46,7 @@ function page_scripts()
         }
     }
 
-    add_filter('script_loader_tag', 'change_my_script', 10, 3);
+    // add_filter('script_loader_tag', 'change_my_script', 10, 3);
 
     function change_my_script($tag, $handle, $src)
     {
@@ -57,6 +57,8 @@ function page_scripts()
             'mobile_index' === $handle or
             'mobile_p404' === $handle
         ) {
+            return str_replace(' src', ' async src', $tag);
+        } else if ('runtime' === $handle) {
             return str_replace(' src', ' defer src', $tag);
         }
 

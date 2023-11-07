@@ -190,35 +190,33 @@
     <h2 class="faq-mobile__title mb-32">Вопрос-ответ</h2>
     <div class="faq-mobile__card">
         <div class="faq-mobile__card-item faq-mobile__card-item_active">
-            <h4 class="faq-mobile__card-item-title">Первый вопрос</h4>
+            <h4 class="faq-mobile__card-item-title">Кому подойдет одностраничный сайт</h4>
             <div class="faq-mobile__card-item-description">
                 <p class="faq-mobile__card-item-description-value">
-                    1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet
-                    culpa inventore molestias id. A facilis enim similique dolores odio
-                    quibusdam sunt voluptatibus accusamus numquam tenetur adipisci quae,
-                    amet aliquam? Deleniti, sunt.
+                    Одностраничный сайт подойдет для тех кто начинает свое дело. Это
+                    идеально подходит малому и среднему бизнесу, отличный инструмент для
+                    рекламных страниц.
                 </p>
             </div>
         </div>
         <div class="faq-mobile__card-item">
-            <h4 class="faq-mobile__card-item-title">Второй вопрос</h4>
+            <h4 class="faq-mobile__card-item-title">Стоимость одностраничного сайта</h4>
             <div class="faq-mobile__card-item-description">
                 <p class="faq-mobile__card-item-description-value">
-                    2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet
-                    culpa inventore molestias id. A facilis enim similique dolores odio
-                    quibusdam sunt voluptatibus accusamus numquam tenetur adipisci quae,
-                    amet aliquam? Deleniti, sunt.
+                    Стоимость на одностраничный сайт может варьироваться от 300 рублей и
+                    достигать несколько тысяч. Это зависит от сложности и количества секций
+                    на странице.
                 </p>
             </div>
         </div>
         <div class="faq-mobile__card-item">
-            <h4 class="faq-mobile__card-item-title">Третий вопрос</h4>
+            <h4 class="faq-mobile__card-item-title">
+                За какое время можно сделать одностраничный сайт
+            </h4>
             <div class="faq-mobile__card-item-description">
                 <p class="faq-mobile__card-item-description-value">
-                    3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet
-                    culpa inventore molestias id. A facilis enim similique dolores odio
-                    quibusdam sunt voluptatibus accusamus numquam tenetur adipisci quae,
-                    amet aliquam? Deleniti, sunt.
+                    В среднем это занимает 5-7 дней. Это зависит от сложности и количества
+                    секций на сайте.
                 </p>
             </div>
         </div>

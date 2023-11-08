@@ -2,14 +2,14 @@
     <div class="header-mobile__container">
         <a class="header-mobile__logo" href="/">Lightning Soft</a>
         <div class="header-mobile__menu">
-            <img class="header__menu-icon" src="/wp-content/themes/LS/frontend/build/img/caf06731ac077691ed1f.svg" />
+            <img class="header__menu-icon" src="/wp-content/themes/LS/frontend/build/img/caf06731ac077691ed1f.svg" alt="Меню" />
         </div>
     </div>
     <div class="header-mobile__navigation">
         <div class="header-mobile__navigation-top">
             <a class="header-mobile__logo" href="/">Lightning Soft</a>
             <div class="header-mobile__close">
-                <img class="header__close-icon" src="/wp-content/themes/LS/frontend/build/img/d64287053581ba847a5d.svg" />
+                <img class="header__close-icon" src="/wp-content/themes/LS/frontend/build/img/d64287053581ba847a5d.svg" alt="Закрыть" />
             </div>
         </div>
         <div class="header-mobile__navigation-bottom">
@@ -17,7 +17,7 @@
                 <a class="header-mobile__navigation-bottom-menu-item" href="#products">Наш продукт</a><a class="header-mobile__navigation-bottom-menu-item" href="#ordering">Порядок сотрудничества</a><a class="header-mobile__navigation-bottom-menu-item" href="#pricing">Стоимость сайта</a><a class="header-mobile__navigation-bottom-menu-item" href="#faq">Вопрос-ответ</a>
             </nav>
             <div class="header-mobile__navigation-bottom-calls">
-                <a class="header-mobile__navigation-bottom-phone" href="tel:375295558386">+375 29 555 83 86</a><a class="header-mobile__telegram" href="https://t.me/zanko_av"><img class="header__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/79558a8010e6539712d7.svg" /></a>
+                <a class="header-mobile__navigation-bottom-phone" href="tel:375295558386">+375 29 555 83 86</a><a class="header-mobile__telegram" href="https://t.me/zanko_av"><img class="header__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/79558a8010e6539712d7.svg" alt="telegram" /></a>
             </div>
         </div>
     </div>
@@ -64,11 +64,11 @@
         <div class="order-item-mobile">
             <div class="order-item-mobile__number">1</div>
             <div class="order-item-mobile__card">
-                <h4 class="order-item-mobile__title mb-16">Знакомство с клиентом</h4>
-                <h4 class="order-item-mobile__description">
+                <h3 class="order-item-mobile__title mb-16">Знакомство с клиентом</h3>
+                <p class="order-item-mobile__description">
                     Изучаем особенности вашего бизнеса, анализируем конкурентов для
                     определения ключевых моментов и их дальнейшего воплощения на сайте.
-                </h4>
+                </p>
             </div>
         </div>
     </div>
@@ -76,14 +76,14 @@
         <div class="order-item-mobile">
             <div class="order-item-mobile__number">2</div>
             <div class="order-item-mobile__card">
-                <h4 class="order-item-mobile__title mb-16">
+                <h3 class="order-item-mobile__title mb-16">
                     Утверждение концепции проекта
-                </h4>
-                <h4 class="order-item-mobile__description">
+                </h3>
+                <p class="order-item-mobile__description">
                     Предоставляем прототип проекта с указанием основных разделов, вносим
                     необходимые изменения. Выполняется расчет окончательной стоимости
                     проекта.
-                </h4>
+                </p>
             </div>
         </div>
     </div>
@@ -91,12 +91,12 @@
         <div class="order-item-mobile">
             <div class="order-item-mobile__number">3</div>
             <div class="order-item-mobile__card">
-                <h4 class="order-item-mobile__title mb-16">Разработка и запуск сайта</h4>
-                <h4 class="order-item-mobile__description">
+                <h3 class="order-item-mobile__title mb-16">Разработка и запуск сайта</h3>
+                <p class="order-item-mobile__description">
                     Разрабатываем удобный и функциональный сайт, используя Ваш дизайн, или
                     создавая дизайн с нуля, адаптируем и оптимизируем его для мобильных
                     устройств, запускаем его в сети интернет.
-                </h4>
+                </p>
             </div>
         </div>
     </div>
@@ -104,21 +104,21 @@
         <div class="order-item-mobile">
             <div class="order-item-mobile__number">4</div>
             <div class="order-item-mobile__card">
-                <h4 class="order-item-mobile__title mb-16">Оплата за услуги</h4>
-                <h4 class="order-item-mobile__description">
+                <h3 class="order-item-mobile__title mb-16">Оплата за услуги</h3>
+                <p class="order-item-mobile__description">
                     Выполняется расчет за проделанную работу.
-                </h4>
+                </p>
             </div>
         </div>
     </div>
     <div class="order-item-mobile">
         <div class="order-item-mobile__number">5</div>
         <div class="order-item-mobile__card">
-            <h4 class="order-item-mobile__title mb-16">Гарантийное обслуживание</h4>
-            <h4 class="order-item-mobile__description">
+            <h3 class="order-item-mobile__title mb-16">Гарантийное обслуживание</h3>
+            <p class="order-item-mobile__description">
                 После запуска проекта мы гарантируем техническое сопровождение сайта в
                 течение года.
-            </h4>
+            </p>
         </div>
     </div>
 </section>
@@ -183,14 +183,14 @@
         <div class="pricing-mobile__card-description mb-40">
             Заявка отправлена, мы свяжемся с Вами в ближайшее время
         </div>
-        <img class="pricing-mobile__card-icon" src="/wp-content/themes/LS/frontend/build/img/625b2e3fe0bf677fa77f.svg" />
+        <img class="pricing-mobile__card-icon" src="/wp-content/themes/LS/frontend/build/img/625b2e3fe0bf677fa77f.svg" alt="Успех" />
     </div>
 </section>
 <section class="faq-mobile mb-64 pt-88" id="faq">
     <h2 class="faq-mobile__title mb-32">Вопрос-ответ</h2>
     <div class="faq-mobile__card">
         <div class="faq-mobile__card-item faq-mobile__card-item_active">
-            <h4 class="faq-mobile__card-item-title">Кому подойдет одностраничный сайт</h4>
+            <h3 class="faq-mobile__card-item-title">Кому подойдет одностраничный сайт</h3>
             <div class="faq-mobile__card-item-description">
                 <p class="faq-mobile__card-item-description-value">
                     Одностраничный сайт подойдет для тех кто начинает свое дело. Это
@@ -200,7 +200,7 @@
             </div>
         </div>
         <div class="faq-mobile__card-item">
-            <h4 class="faq-mobile__card-item-title">Стоимость одностраничного сайта</h4>
+            <h3 class="faq-mobile__card-item-title">Стоимость одностраничного сайта</h3>
             <div class="faq-mobile__card-item-description">
                 <p class="faq-mobile__card-item-description-value">
                     Стоимость на одностраничный сайт может варьироваться от 300 рублей и
@@ -210,9 +210,9 @@
             </div>
         </div>
         <div class="faq-mobile__card-item">
-            <h4 class="faq-mobile__card-item-title">
+            <h3 class="faq-mobile__card-item-title">
                 За какое время можно сделать одностраничный сайт
-            </h4>
+            </h3>
             <div class="faq-mobile__card-item-description">
                 <p class="faq-mobile__card-item-description-value">
                     В среднем это занимает 5-7 дней. Это зависит от сложности и количества
@@ -232,7 +232,7 @@
                 <a class="footer-mobile__phone" href="tel:80295558386">8 029 555-83-86</a>
             </div>
             <div class="footer-mobile__phone-label mb-20">Для звонков по Беларуси</div>
-            <a class="footer-mobile__telegram" href="https://t.me/zanko_av"><img class="footer-mobile__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/1f29d653ac40aedb3780.svg" /></a>
+            <a class="footer-mobile__telegram" href="https://t.me/zanko_av"><img class="footer-mobile__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/1f29d653ac40aedb3780.svg" alt="telegram" /></a>
         </div>
     </div>
     <div class="footer-mobile__bottom">

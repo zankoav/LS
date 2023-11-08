@@ -4,7 +4,7 @@
         <nav class="header__menu">
             <a class="header__menu-item" href="#products">Наш продукт</a><a class="header__menu-item" href="#ordering">Порядок сотрудничества</a><a class="header__menu-item" href="#pricing">Стоимость сайта</a><a class="header__menu-item" href="#faq">Вопрос-ответ</a>
         </nav>
-        <a class="header__phone" href="tel:375295558386">+375 29 555 83 86</a><a class="header__telegram" href="https://t.me/zanko_av"><img class="header__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/79558a8010e6539712d7.svg" /></a>
+        <a class="header__phone" href="tel:375295558386">+375 29 555 83 86</a><a class="header__telegram" href="https://t.me/zanko_av"><img class="header__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/79558a8010e6539712d7.svg" alt="telegram" /></a>
     </div>
 </header>
 <section class="welcome pt-128">
@@ -59,11 +59,11 @@
         <div class="order-item">
             <div class="order-item__number">1</div>
             <div class="order-item__card">
-                <h4 class="order-item__title mb-16">Знакомство с клиентом</h4>
-                <h4 class="order-item__description">
+                <h3 class="order-item__title mb-16">Знакомство с клиентом</h3>
+                <p class="order-item__description">
                     Изучаем особенности вашего бизнеса, анализируем конкурентов для
                     определения ключевых моментов и их дальнейшего воплощения на сайте.
-                </h4>
+                </p>
             </div>
         </div>
     </div>
@@ -71,12 +71,12 @@
         <div class="order-item">
             <div class="order-item__number">2</div>
             <div class="order-item__card">
-                <h4 class="order-item__title mb-16">Утверждение концепции проекта</h4>
-                <h4 class="order-item__description">
+                <h3 class="order-item__title mb-16">Утверждение концепции проекта</h3>
+                <p class="order-item__description">
                     Предоставляем прототип проекта с указанием основных разделов, вносим
                     необходимые изменения. Выполняется расчет окончательной стоимости
                     проекта.
-                </h4>
+                </p>
             </div>
         </div>
     </div>
@@ -84,12 +84,12 @@
         <div class="order-item">
             <div class="order-item__number">3</div>
             <div class="order-item__card">
-                <h4 class="order-item__title mb-16">Разработка и запуск сайта</h4>
-                <h4 class="order-item__description">
+                <h3 class="order-item__title mb-16">Разработка и запуск сайта</h3>
+                <p class="order-item__description">
                     Разрабатываем удобный и функциональный сайт, используя Ваш дизайн, или
                     создавая дизайн с нуля, адаптируем и оптимизируем его для мобильных
                     устройств, запускаем его в сети интернет.
-                </h4>
+                </p>
             </div>
         </div>
     </div>
@@ -97,10 +97,10 @@
         <div class="order-item">
             <div class="order-item__number">4</div>
             <div class="order-item__card">
-                <h4 class="order-item__title mb-16">Оплата за услуги</h4>
-                <h4 class="order-item__description">
+                <h3 class="order-item__title mb-16">Оплата за услуги</h3>
+                <p class="order-item__description">
                     Выполняется расчет за проделанную работу.
-                </h4>
+                </p>
             </div>
         </div>
     </div>
@@ -108,11 +108,11 @@
         <div class="order-item">
             <div class="order-item__number">5</div>
             <div class="order-item__card">
-                <h4 class="order-item__title mb-16">Гарантийное обслуживание</h4>
-                <h4 class="order-item__description">
+                <h3 class="order-item__title mb-16">Гарантийное обслуживание</h3>
+                <p class="order-item__description">
                     После запуска проекта мы гарантируем техническое сопровождение сайта в
                     течение года.
-                </h4>
+                </p>
             </div>
         </div>
     </div>
@@ -178,14 +178,14 @@
         <div class="pricing__card-description mb-40">
             Заявка отправлена, мы свяжемся с Вами в ближайшее время
         </div>
-        <img class="pricing__card-icon" src="/wp-content/themes/LS/frontend/build/img/625b2e3fe0bf677fa77f.svg" />
+        <img class="pricing__card-icon" src="/wp-content/themes/LS/frontend/build/img/625b2e3fe0bf677fa77f.svg" alt="Успех" />
     </div>
 </section>
 <section class="faq mb-64 pt-88" id="faq">
     <h2 class="faq__title mb-48">Вопрос-ответ</h2>
     <div class="faq__card">
         <div class="faq__card-item faq__card-item_active">
-            <h4 class="faq__card-item-title">Кому подойдет одностраничный сайт</h4>
+            <h3 class="faq__card-item-title">Кому подойдет одностраничный сайт</h3>
             <div class="faq__card-item-description">
                 <p class="faq__card-item-description-value">
                     Одностраничный сайт подойдет для тех кто начинает свое дело. Это
@@ -195,7 +195,7 @@
             </div>
         </div>
         <div class="faq__card-item">
-            <h4 class="faq__card-item-title">Стоимость одностраничного сайта</h4>
+            <h3 class="faq__card-item-title">Стоимость одностраничного сайта</h3>
             <div class="faq__card-item-description">
                 <p class="faq__card-item-description-value">
                     Стоимость на одностраничный сайт может варьироваться от 300 рублей и
@@ -205,9 +205,9 @@
             </div>
         </div>
         <div class="faq__card-item">
-            <h4 class="faq__card-item-title">
+            <h3 class="faq__card-item-title">
                 За какое время можно сделать одностраничный сайт
-            </h4>
+            </h3>
             <div class="faq__card-item-description">
                 <p class="faq__card-item-description-value">
                     В среднем это занимает 5-7 дней. Это зависит от сложности и количества
@@ -230,7 +230,7 @@
     <div class="footer__bottom">
         <div class="footer__bottom-container">
             <div class="footer__copy">© 2020—2023, ООО «Лайтнинг Софт»</div>
-            <a class="footer__telegram" href="https://t.me/zanko_av"><img class="footer__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/1f29d653ac40aedb3780.svg" /></a>
+            <a class="footer__telegram" href="https://t.me/zanko_av"><img class="footer__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/1f29d653ac40aedb3780.svg" alt="telegram" /></a>
         </div>
     </div>
 </footer>

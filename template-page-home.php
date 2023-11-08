@@ -25,6 +25,12 @@ if (!defined('ABSPATH')) {
     <?php wp_head(); ?>
     <script type="text/javascript">
         const landing_ajax = "<?= admin_url('admin-ajax.php'); ?>";
+        /** JS */
+        <?php
+        $templateName = (wp_is_mobile() ? 'mobile' : 'desktop') . '_index.js';
+        $assets = new Assets();
+        echo file_get_contents(__DIR__ . $assets->asset($templateName));
+        ?>
     </script>
 </head>
 

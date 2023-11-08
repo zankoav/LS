@@ -16,6 +16,13 @@ if (!defined('ABSPATH')) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <?php wp_head(); ?>
+    <script type="text/javascript">
+        <?php
+        $templateName = (wp_is_mobile() ? 'mobile' : 'desktop') . '_p404.js';
+        $assets = new Assets();
+        echo file_get_contents(__DIR__ . $assets->asset($templateName));
+        ?>
+    </script>
 </head>
 
 <body>

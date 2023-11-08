@@ -7,6 +7,13 @@ require __DIR__ . '/backend/Assets.php';
 require __DIR__ . '/backend/CMB2/index.php';
 require __DIR__ . '/backend/ajax.php';
 
+
+
+add_action('after_setup_theme', function () {
+    add_theme_support('title-tag');
+});
+
+
 add_action('wp_enqueue_scripts', 'page_scripts');
 
 function page_scripts()

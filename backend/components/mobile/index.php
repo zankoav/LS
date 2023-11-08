@@ -33,7 +33,7 @@
             <a class="button" href="#pricing">Узнать стоимость</a>
         </div>
         <div class="welcome-mobile__image">
-            <img class="welcome-mobile__icon" src="/wp-content/themes/LS/frontend/build/img/47687c19c1ffb092aa4f.svg" alt="Разработка одностраничного сайта" />
+            <img class="welcome-mobile__icon" width="334" height="263" src="/wp-content/themes/LS/frontend/build/img/3d57a5c0ea542aa8f799.png" alt="Разработка одностраничного сайта" />
         </div>
     </section>
 </div>

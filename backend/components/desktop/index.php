@@ -17,7 +17,7 @@
         <a class="button" href="#pricing">Узнать стоимость</a>
     </div>
     <div class="welcome__image">
-        <img class="welcome__icon" src="/wp-content/themes/LS/frontend/build/img/547bdab79218a1c7b0ba.svg" alt="Разработка одностраничного сайта" />
+        <img class="welcome__icon" width="1009" height="525" src="/wp-content/themes/LS/frontend/build/img/e0f3f24447b78fea53b0.png" alt="Разработка одностраничного сайта" />
     </div>
 </section>
 <section class="products pt-88" id="products">

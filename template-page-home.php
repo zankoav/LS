@@ -21,8 +21,10 @@ if (!defined('ABSPATH')) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="description" content="Мы предлагаем разработку одностраничного сайта любой сложности по низким ценам с гарантией технической поддержки в течении года.">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <?php wp_head(); ?>
+
     <script type="text/javascript">
         const landing_ajax = "<?= admin_url('admin-ajax.php'); ?>";
         /** JS */

@@ -33,7 +33,7 @@ $LS_RED_1: #fe4e4e;
 
 @mixin font-h3 {
     color: $LS_GRAY_1;
-    font: 600 24px/28px Roboto;
+    font: 700 24px/28px Roboto;
 }
 
 @mixin font-h4 {
@@ -43,7 +43,7 @@ $LS_RED_1: #fe4e4e;
 
 @mixin font-h5 {
     color: $LS_GRAY_1;
-    font: 600 18px/1 Roboto;
+    font: 700 18px/1 Roboto;
 }
 
 @mixin font-p1 {
@@ -53,7 +53,7 @@ $LS_RED_1: #fe4e4e;
 
 @mixin font-p2 {
     color: $LS_GRAY_5;
-    font: 300 15px/18px Roboto;
+    font: 400 15px/18px Roboto;
 }
 
 @mixin font-p3 {

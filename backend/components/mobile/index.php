@@ -2,14 +2,14 @@
     <div class="header-mobile__container">
         <a class="header-mobile__logo" href="/">Lightning Soft</a>
         <div class="header-mobile__menu">
-            <img class="header__menu-icon" src="/wp-content/themes/LS/frontend/build/img/caf06731ac077691ed1f.svg" alt="Меню" />
+            <img class="header__menu-icon" width="24" height="24" src="/wp-content/themes/LS/frontend/build/img/caf06731ac077691ed1f.svg" alt="Меню" />
         </div>
     </div>
     <div class="header-mobile__navigation">
         <div class="header-mobile__navigation-top">
             <a class="header-mobile__logo" href="/">Lightning Soft</a>
             <div class="header-mobile__close">
-                <img class="header__close-icon" src="/wp-content/themes/LS/frontend/build/img/d64287053581ba847a5d.svg" alt="Закрыть" />
+                <img class="header__close-icon" width="24" height="24" src="/wp-content/themes/LS/frontend/build/img/d64287053581ba847a5d.svg" alt="Закрыть" />
             </div>
         </div>
         <div class="header-mobile__navigation-bottom">
@@ -17,7 +17,7 @@
                 <a class="header-mobile__navigation-bottom-menu-item" href="#products">Наш продукт</a><a class="header-mobile__navigation-bottom-menu-item" href="#ordering">Порядок сотрудничества</a><a class="header-mobile__navigation-bottom-menu-item" href="#pricing">Стоимость сайта</a><a class="header-mobile__navigation-bottom-menu-item" href="#faq">Вопрос-ответ</a>
             </nav>
             <div class="header-mobile__navigation-bottom-calls">
-                <a class="header-mobile__navigation-bottom-phone" href="tel:375295558386">+375 29 555 83 86</a><a class="header-mobile__telegram" href="https://t.me/zanko_av"><img class="header__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/79558a8010e6539712d7.svg" alt="telegram" /></a>
+                <a class="header-mobile__navigation-bottom-phone" href="tel:375295558386">+375 29 555 83 86</a><a class="header-mobile__telegram" href="https://t.me/zanko_av"><img class="header__telegram-icon" width="24" height="24" src="/wp-content/themes/LS/frontend/build/img/79558a8010e6539712d7.svg" alt="telegram" /></a>
             </div>
         </div>
     </div>
@@ -172,7 +172,7 @@
                 Ввод номера телефона подтверждает ваше согласие c условиями передачи
                 информации
             </div>
-            <a class="button">Отправить</a>
+            <div class="button">Отправить</div>
         </div>
     </div>
     <div class="pricing-mobile__card pricing-mobile__card_spinner">
@@ -232,7 +232,7 @@
                 <a class="footer-mobile__phone" href="tel:80295558386">8 029 555-83-86</a>
             </div>
             <div class="footer-mobile__phone-label mb-20">Для звонков по Беларуси</div>
-            <a class="footer-mobile__telegram" href="https://t.me/zanko_av"><img class="footer-mobile__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/1f29d653ac40aedb3780.svg" alt="telegram" /></a>
+            <a class="footer-mobile__telegram" href="https://t.me/zanko_av"><img class="footer-mobile__telegram-icon" width="24" height="24" src="/wp-content/themes/LS/frontend/build/img/1f29d653ac40aedb3780.svg" alt="telegram" /></a>
         </div>
     </div>
     <div class="footer-mobile__bottom">

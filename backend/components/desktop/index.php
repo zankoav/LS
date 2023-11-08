@@ -4,7 +4,7 @@
         <nav class="header__menu">
             <a class="header__menu-item" href="#products">Наш продукт</a><a class="header__menu-item" href="#ordering">Порядок сотрудничества</a><a class="header__menu-item" href="#pricing">Стоимость сайта</a><a class="header__menu-item" href="#faq">Вопрос-ответ</a>
         </nav>
-        <a class="header__phone" href="tel:375295558386">+375 29 555 83 86</a><a class="header__telegram" href="https://t.me/zanko_av"><img class="header__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/79558a8010e6539712d7.svg" alt="telegram" /></a>
+        <a class="header__phone" href="tel:375295558386">+375 29 555 83 86</a><a class="header__telegram" href="https://t.me/zanko_av"><img class="header__telegram-icon" width="24" height="24" src="/wp-content/themes/LS/frontend/build/img/79558a8010e6539712d7.svg" alt="telegram" /></a>
     </div>
 </header>
 <section class="welcome pt-128">
@@ -167,7 +167,7 @@
                 Ввод номера телефона подтверждает ваше согласие c условиями передачи
                 информации
             </div>
-            <a class="button">Отправить</a>
+            <div class="button">Отправить</div>
         </div>
     </div>
     <div class="pricing__card pricing__card_spinner">
@@ -230,7 +230,7 @@
     <div class="footer__bottom">
         <div class="footer__bottom-container">
             <div class="footer__copy">© 2020—2023, ООО «Лайтнинг Софт»</div>
-            <a class="footer__telegram" href="https://t.me/zanko_av"><img class="footer__telegram-icon" src="/wp-content/themes/LS/frontend/build/img/1f29d653ac40aedb3780.svg" alt="telegram" /></a>
+            <a class="footer__telegram" href="https://t.me/zanko_av"><img class="footer__telegram-icon" width="24" height="24" src="/wp-content/themes/LS/frontend/build/img/1f29d653ac40aedb3780.svg" alt="telegram" /></a>
         </div>
     </div>
 </footer>

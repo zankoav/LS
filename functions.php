@@ -21,4 +21,7 @@ function page_scripts()
     wp_dequeue_script('jquery');
     wp_dequeue_script('jquery-core');
     wp_dequeue_script('jquery-migrate');
+    wp_dequeue_style('wp-block-library');
+    wp_dequeue_style('wp-block-library-theme');
+    wp_dequeue_style('wc-blocks-style');
 }

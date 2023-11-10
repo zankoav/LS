@@ -17,7 +17,7 @@
                 <a class="header-mobile__navigation-bottom-menu-item" href="#products">Наш продукт</a><a class="header-mobile__navigation-bottom-menu-item" href="#ordering">Порядок сотрудничества</a><a class="header-mobile__navigation-bottom-menu-item" href="#pricing">Стоимость сайта</a><a class="header-mobile__navigation-bottom-menu-item" href="#faq">Вопрос-ответ</a>
             </nav>
             <div class="header-mobile__navigation-bottom-calls">
-                <a class="header-mobile__navigation-bottom-phone" href="tel:375295558386">+375 29 555 83 86</a><a class="header-mobile__telegram" href="https://t.me/zanko_av"><img class="header__telegram-icon" width="24" height="24" src="/wp-content/themes/LS/frontend/build/img/79558a8010e6539712d7.svg" alt="telegram" /></a>
+                <a class="header-mobile__navigation-bottom-phone" id="header-phone" href="tel:375295558386">+375 29 555 83 86</a><a class="header-mobile__telegram" id="header-telegram" href="https://t.me/zanko_av"><img class="header__telegram-icon" width="24" height="24" src="/wp-content/themes/LS/frontend/build/img/79558a8010e6539712d7.svg" alt="telegram" /></a>
             </div>
         </div>
     </div>
@@ -229,10 +229,10 @@
                 <a class="footer-mobile__logo" href="/">Lightning Soft</a>
             </div>
             <div class="footer-mobile__phone-wrapper">
-                <a class="footer-mobile__phone" href="tel:80295558386">8 029 555-83-86</a>
+                <a class="footer-mobile__phone" id="footer-phone" href="tel:80295558386">8 029 555-83-86</a>
             </div>
             <div class="footer-mobile__phone-label mb-20">Для звонков по Беларуси</div>
-            <a class="footer-mobile__telegram" href="https://t.me/zanko_av"><img class="footer-mobile__telegram-icon" width="24" height="24" src="/wp-content/themes/LS/frontend/build/img/1f29d653ac40aedb3780.svg" alt="telegram" /></a>
+            <a class="footer-mobile__telegram" id="footer-telegram" href="https://t.me/zanko_av"><img class="footer-mobile__telegram-icon" width="24" height="24" src="/wp-content/themes/LS/frontend/build/img/1f29d653ac40aedb3780.svg" alt="telegram" /></a>
         </div>
     </div>
     <div class="footer-mobile__bottom">

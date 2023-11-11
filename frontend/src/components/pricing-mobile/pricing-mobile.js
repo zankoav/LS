@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
                     .classList.contains('pricing-mobile__content_primary')
                     ? 'primary'
                     : 'secondary'
-                pricingCardThankYouEl.classList.add(`ga4-thank-you-${type}`)
+                pricingCardThankYouEl.setAttribute('id', `ga4-thank-you-${type}`)
             } catch (error) {
                 console.error(error)
             }

@@ -71,9 +71,15 @@ document.addEventListener('DOMContentLoaded', function (event) {
                     body: data
                 })
                 clearPricingCards()
-                document
-                    .querySelector('.pricing__card_thank-you')
-                    .classList.add('pricing__card_active')
+
+                const pricingCardThankYouEl = document.querySelector('.pricing__card_thank-you')
+                pricingCardThankYouEl.classList.add('pricing__card_active')
+                const type = document
+                    .querySelector('.pricing__content_active')
+                    .classList.contains('pricing__content_primary')
+                    ? 'primary'
+                    : 'secondary'
+                pricingCardThankYouEl.classList.add(`ga4-thank-you-${type}`)
             } catch (error) {
                 console.error(error)
             }

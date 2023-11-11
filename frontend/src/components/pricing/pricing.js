@@ -74,12 +74,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
                 const pricingCardThankYouEl = document.querySelector('.pricing__card_thank-you')
                 pricingCardThankYouEl.classList.add('pricing__card_active')
-                const type = document
+                const ga4Type = document
                     .querySelector('.pricing__content_active')
                     .classList.contains('pricing__content_primary')
-                    ? 'primary'
-                    : 'secondary'
-                pricingCardThankYouEl.setAttribute('id', `ga4-thank-you-${type}`)
+                    ? 'Submit_Base'
+                    : 'Submit_Figma'
+                dataLayer.push({'event': ga4Type})
             } catch (error) {
                 console.error(error)
             }

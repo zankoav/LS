@@ -36,7 +36,11 @@ function post_message()
     $msg .= "<p><strong>Комментарий: </strong><span>" . $form_comments  . "</span></p>";
 
 
+
     if (wp_mail($mail_to, $subject, $msg, $headers)) {
+
+        file_put_contents('messages.log', $msg, FILE_APPEND | LOCK_EX);
+
         $response['status'] = 1;
     }
 

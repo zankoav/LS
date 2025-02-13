@@ -39,11 +39,9 @@ function post_message()
 
     if (wp_mail($mail_to, $subject, $msg, $headers)) {
 
-        $path = get_template_directory_uri();
-        $result = file_put_contents($path . 'backend/messages.log', $msg, FILE_APPEND | LOCK_EX);
+        $result = file_put_contents(__DIR__ . '/messages.log', $msg, FILE_APPEND | LOCK_EX);
 
         $response['status'] = 1;
-        $response['path'] = $path;
         $response['dir'] = __DIR__;
         $response['result'] = $result;
     }

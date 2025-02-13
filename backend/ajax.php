@@ -39,9 +39,13 @@ function post_message()
 
     if (wp_mail($mail_to, $subject, $msg, $headers)) {
 
-        file_put_contents('messages.log', $msg, FILE_APPEND | LOCK_EX);
+        $path = get_template_directory_uri();
+        $result = file_put_contents($path . 'backend/messages.log', $msg, FILE_APPEND | LOCK_EX);
 
         $response['status'] = 1;
+        $response['path'] = $path;
+        $response['dir'] = __DIR__;
+        $response['result'] = $result;
     }
 
     echo json_encode($response);

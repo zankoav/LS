@@ -39,7 +39,8 @@ function post_message()
 
     if (wp_mail($mail_to, $subject, $msg, $headers)) {
 
-        $result = file_put_contents(__DIR__ . '/messages.log', $msg, FILE_APPEND | LOCK_EX);
+        $log = $msg . '\n\n\n';
+        file_put_contents(__DIR__ . '/messages.log', $log, FILE_APPEND | LOCK_EX);
         $response['status'] = 1;
     }
 

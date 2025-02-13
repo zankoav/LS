@@ -39,7 +39,7 @@ function post_message()
 
     if (wp_mail($mail_to, $subject, $msg, $headers)) {
 
-        $log = $msg . '\n\n\n';
+        $log = "Телефон: $form_phone \n Ссылка на конкурента: $form_opponent \n Ссылка на Figma: $form_prototip \n Комментарий: $form_comments \n \n \n";
         file_put_contents(__DIR__ . '/messages.log', $log, FILE_APPEND | LOCK_EX);
         $response['status'] = 1;
     }

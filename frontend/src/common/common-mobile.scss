@@ -40,6 +40,10 @@ body {
     margin-bottom: 74px;
 }
 
+.mt-32 {
+    margin-top: 32px;
+}
+
 // MARGIN END
 
 // PADDING START
@@ -51,6 +55,11 @@ body {
     padding-top: 128px;
 }
 // PADDING END
+
+// DISPLAY
+.d-b {
+    display: block;
+}
 
 @keyframes fade-in {
     0% {

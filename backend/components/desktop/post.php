@@ -15,8 +15,7 @@
         <small class="d-b post__date mb-16">от <?= get_the_date('d.m.Y'); ?> </small>
         <?php
         $thumbnail = get_the_post_thumbnail_url(get_the_ID());
-        echo $thumbnail;
-        if (empty($thumbnail)): ?>
+        if (!empty($thumbnail)): ?>
             <img class="post__image" src="<?= $thumbnail; ?>" alt="<?= get_the_title(); ?>" />
         <?php endif; ?>
         <div class="post__content mt-32">

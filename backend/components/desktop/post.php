@@ -12,7 +12,7 @@
     </header>
     <div class="post">
         <h1 class="post__title mb-8"><?= get_the_title(); ?></h1>
-        <small class="d-b post__date mb-16">от <?= get_the_date('n.j.Y'); ?> </small>
+        <small class="d-b post__date mb-16">от <?= get_the_date('d.m.Y'); ?> </small>
         <img class="post__image" src="<?= get_the_post_thumbnail_url(get_the_ID()) ?>" alt="<?= get_the_title(); ?>" />
         <div class="post__content mt-32">
             <?php the_content(); ?>

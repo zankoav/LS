@@ -1,0 +1,18 @@
+@import './../../common/constants';
+
+.post {
+    @include container;
+    margin-top: 64px;
+    padding-top: 56px;
+    min-height: 300px;
+
+    &:empty {
+        &::after {
+            content: 'No content yet!';
+            display: block;
+            color: #aaa;
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+}

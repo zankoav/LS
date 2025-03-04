@@ -11,6 +11,8 @@ module.exports = (env) => {
         entry: {
             desktop_index: path.resolve(__dirname, 'src/templates/desktop', 'index.js'),
             mobile_index: path.resolve(__dirname, 'src/templates/mobile', 'index.js'),
+            desktop_post: path.resolve(__dirname, 'src/templates/desktop', 'post.js'),
+            mobile_post: path.resolve(__dirname, 'src/templates/mobile', 'post.js'),
             desktop_p404: path.resolve(__dirname, 'src/templates/desktop', 'p404.js'),
             mobile_p404: path.resolve(__dirname, 'src/templates/mobile', 'p404.js')
         },
@@ -68,6 +70,22 @@ module.exports = (env) => {
                 minify: false,
                 chunks: ['mobile_p404'],
                 template: path.resolve(__dirname, 'src/templates/mobile/p404.pug')
+            }),
+            new HtmlWebpackPlugin({
+                title: 'Post Mobile',
+                filename: 'mobile_post.html',
+                inject: 'head',
+                minify: false,
+                chunks: ['mobile_post'],
+                template: path.resolve(__dirname, 'src/templates/mobile/post.pug')
+            }),
+            new HtmlWebpackPlugin({
+                title: 'Post Desktop',
+                filename: 'desktop_post.html',
+                inject: 'head',
+                minify: false,
+                chunks: ['desktop_post'],
+                template: path.resolve(__dirname, 'src/templates/desktop/post.pug')
             })
         ],
         module: {

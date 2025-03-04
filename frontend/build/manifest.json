@@ -1,6 +1,8 @@
 {
   "desktop_index.js": "/wp-content/themes/LS/frontend/build/js/desktop_index.f172aacff9e5f6f85be8.js",
   "mobile_index.js": "/wp-content/themes/LS/frontend/build/js/mobile_index.aa5b3a71126f4d9d6e97.js",
+  "desktop_post.js": "/wp-content/themes/LS/frontend/build/js/desktop_post.272561ba3beacd83799b.js",
+  "mobile_post.js": "/wp-content/themes/LS/frontend/build/js/mobile_post.18e5a7c82f0915249909.js",
   "desktop_p404.js": "/wp-content/themes/LS/frontend/build/js/desktop_p404.d506f0ff26b192c9f43d.js",
   "mobile_p404.js": "/wp-content/themes/LS/frontend/build/js/mobile_p404.8ccecf32145e41860b64.js",
   "img/img_2.svg": "/wp-content/themes/LS/frontend/build/img/683cfd096ddb4e051cc2.svg",
@@ -10,7 +12,9 @@
   "mobile_index.html": "/wp-content/themes/LS/frontend/build/mobile_index.html",
   "desktop_index.html": "/wp-content/themes/LS/frontend/build/desktop_index.html",
   "mobile_p404.html": "/wp-content/themes/LS/frontend/build/mobile_p404.html",
+  "mobile_post.html": "/wp-content/themes/LS/frontend/build/mobile_post.html",
   "desktop_p404.html": "/wp-content/themes/LS/frontend/build/desktop_p404.html",
+  "desktop_post.html": "/wp-content/themes/LS/frontend/build/desktop_post.html",
   "img/telegram-gray.svg": "/wp-content/themes/LS/frontend/build/img/1f29d653ac40aedb3780.svg",
   "img/telegram.svg": "/wp-content/themes/LS/frontend/build/img/79558a8010e6539712d7.svg",
   "img/arrow.svg": "/wp-content/themes/LS/frontend/build/img/eb9993ce56ccb6ec59e3.svg",

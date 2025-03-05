@@ -18,7 +18,7 @@
         if (!empty($thumbnail)): ?>
             <img class="post__image" src="<?= $thumbnail; ?>" alt="<?= get_the_title(); ?>" />
         <?php endif; ?>
-        <div class="post__content mt-32">
+        <div class="post__content ls-editor mt-32">
             <?php the_content(); ?>
         </div>
     </div>

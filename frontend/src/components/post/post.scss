@@ -1,12 +1,15 @@
 @import './../../common/constants';
 
 .post {
-    margin-top: 64px;
     padding: 56px 16px;
     min-height: 300px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: 768px) {
+        padding: 100px 16px 56px;
+    }
 
     &:empty {
         &::after {

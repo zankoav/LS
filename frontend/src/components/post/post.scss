@@ -2,7 +2,7 @@
 
 .post {
     margin-top: 64px;
-    padding: 56px 8px;
+    padding: 56px 16px;
     min-height: 300px;
     max-width: 800px;
     margin-left: auto;
@@ -20,10 +20,17 @@
 
     &__title {
         @include font-h1;
+        font-size: 24px;
+
+        @media (min-width: 768px) {
+            font-size: 44px;
+        }
     }
 
     &__content {
-        @include font-p1;
+        @include font-p2;
+        font-size: 16px;
+        line-height: 144%;
     }
 
     &__image {

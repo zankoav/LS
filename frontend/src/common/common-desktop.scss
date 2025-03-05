@@ -13,6 +13,25 @@ body {
     justify-content: space-between;
 }
 
+.ls-editor {
+    em {
+        font-style: italic;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    ol,
+    ul {
+        padding-inline-start: 20px;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+}
+
 // MARGIN START
 
 .mb-16 {

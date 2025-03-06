@@ -4,6 +4,12 @@
 body {
     font-family: Roboto, sans-serif;
     background-color: $LS_GRAY_6;
+
+    &.customize-support {
+        header {
+            top: 32px;
+        }
+    }
 }
 
 .single-post {

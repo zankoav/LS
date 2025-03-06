@@ -62,6 +62,7 @@ if (!defined('ABSPATH')) {
     $template = wp_is_mobile() ? 'backend/components/mobile/index' : 'backend/components/desktop/index';
     get_template_part($template);
     ?>
+    <?php wp_footer(); ?>
 </body>
 
 </html>

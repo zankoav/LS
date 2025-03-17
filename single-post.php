@@ -1,11 +1,5 @@
 <?php
 
-/**
- *
- * Template Name: Home page
- *
- */
-
 if (!defined('ABSPATH')) {
     exit;
 }

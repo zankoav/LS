@@ -26,3 +26,39 @@ function page_scripts()
     wp_dequeue_style('wp-block-library-theme');
     wp_dequeue_style('wc-blocks-style');
 }
+
+
+function register_service_type() {
+
+    register_post_type('service', array(
+        'labels'             => array(
+            'name'               => 'Услуга', // Основное название типа записи
+            'singular_name'      => __('Услуга'), // отдельное название записи типа Book
+            'add_new'            => __('Добавить Услугу'),
+            'add_new_item'       => __('Добавить новыю Услугу'),
+            'edit_item'          => __('Редактировать Услугу'),
+            'new_item'           => __('Новая Услуга'),
+            'view_item'          => __('Посмотреть Услугу'),
+            'search_items'       => __('Найти Услугу'),
+            'not_found'          => __('Услуга не найдено'),
+            'not_found_in_trash' => __('В корзине Услуги не найдено'),
+            'menu_name'          => 'Услуги',
+            'items_archive'      => 'Услуги архив',
+        ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'show_in_nav_menus'  => true,
+        'query_var'          => true,
+        'rewrite'            => false,
+        'capability_type'    =>array('service','services'),
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 6,
+        'menu_icon'          => 'dashicons-carrot',
+        'supports'           => array('title', 'editor', 'thumbnail')
+    ));
+}
+
+add_action('init', 'register_service_type');

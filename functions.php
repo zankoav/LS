@@ -52,7 +52,7 @@ function register_service_type()
         'show_in_menu'       => true,
         'show_in_nav_menus'  => true,
         'query_var'          => true,
-        'rewrite'            => array('slug' => 'service', 'with_front' => false),
+        'rewrite'            => array('slug' => 'services', 'with_front' => false),
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => 6,

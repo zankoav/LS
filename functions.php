@@ -28,12 +28,13 @@ function page_scripts()
 }
 
 
-function register_service_type() {
+function register_service_type()
+{
 
     register_post_type('service', array(
         'labels'             => array(
-            'name'               => 'Услуга', // Основное название типа записи
-            'singular_name'      => __('Услуга'), // отдельное название записи типа Book
+            'name'               => 'Услуга',
+            'singular_name'      => __('Услуга'),
             'add_new'            => __('Добавить Услугу'),
             'add_new_item'       => __('Добавить новыю Услугу'),
             'edit_item'          => __('Редактировать Услугу'),
@@ -52,7 +53,6 @@ function register_service_type() {
         'show_in_nav_menus'  => true,
         'query_var'          => true,
         'rewrite'            => false,
-        'capability_type'    =>array('service','services'),
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => 6,

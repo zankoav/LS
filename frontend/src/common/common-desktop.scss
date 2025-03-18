@@ -2,7 +2,6 @@
 @import './reset';
 
 body {
-    font-family: Roboto, sans-serif;
     background-color: $LS_GRAY_6;
 
     &.customize-support {
@@ -10,6 +9,60 @@ body {
             top: 32px;
         }
     }
+}
+
+.lora-bold {
+    font-family: 'Lora', serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.open-sans-light {
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+.open-sans-book {
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+.open-sans-medium {
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+.open-sans-demi {
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+.open-sans-bold {
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+.open-sans-black {
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
 }
 
 .single-post {

@@ -1,0 +1,23 @@
+@import './../../common/constants-v2';
+
+.header {
+    display: block;
+    background-color: $LS_WHITE;
+    border-bottom: 1px solid $LS_GRAY_3;
+
+    &__container {
+        @include container;
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        @include font-logo;
+    }
+
+    &__telegram {
+        display: flex;
+    }
+}

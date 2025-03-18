@@ -9,6 +9,7 @@ module.exports = (env) => {
         mode: 'development',
         devtool: 'inline-source-map',
         entry: {
+            ls_post: path.resolve(__dirname, 'src/templates/ls_post', 'ls_post.js'),
             desktop_index: path.resolve(__dirname, 'src/templates/desktop', 'index.js'),
             mobile_index: path.resolve(__dirname, 'src/templates/mobile', 'index.js'),
             desktop_post: path.resolve(__dirname, 'src/templates/desktop', 'post.js'),
@@ -39,6 +40,14 @@ module.exports = (env) => {
         },
         plugins: [
             new WebpackManifestPlugin({}),
+            new HtmlWebpackPlugin({
+                title: 'Post',
+                filename: 'ls_post.html',
+                inject: 'head',
+                minify: false,
+                chunks: ['ls_post'],
+                template: path.resolve(__dirname, 'src/templates/ls_post/ls_post.pug')
+            }),
             new HtmlWebpackPlugin({
                 title: 'Desktop Home',
                 filename: 'desktop_index.html',

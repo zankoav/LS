@@ -1,0 +1,199 @@
+// COLORS START:
+$LS_WHITE: #ffffff;
+$LS_GRAY_1: #333333;
+$LS_GRAY_2: #9299a2;
+$LS_GRAY_3: #dddfe0;
+// COLORS END;
+
+// MEDIA SCREENS START:
+$MEDIA: (
+    SM: 768px,
+    MD: 1024px,
+    LG: 1280px,
+    XL: 1366px,
+    XLL: 1440px,
+    HD: 1920px,
+    XHD: 2560px
+);
+
+@mixin sm {
+    @media (min-width: map_get($MEDIA, SM)) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: map_get($MEDIA, MD)) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: map_get($MEDIA, LG)) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: map_get($MEDIA, XL)) {
+        @content;
+    }
+}
+
+@mixin xll {
+    @media (min-width: map_get($MEDIA, XLL)) {
+        @content;
+    }
+}
+
+@mixin hd {
+    @media (min-width: map_get($MEDIA, HD)) {
+        @content;
+    }
+}
+
+@mixin xhd {
+    @media (min-width: map_get($MEDIA, XHD)) {
+        @content;
+    }
+}
+
+// TITLES START
+
+@mixin font-logo {
+    color: $LS_GRAY_1;
+    font-family: 'Lora', serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+}
+
+@mixin font-h1 {
+    color: $LS_GRAY_1;
+    font-family: 'Lora', serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+
+    @include lg {
+        font-size: 44px;
+    }
+}
+
+@mixin font-date {
+    color: $LS_GRAY_3;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+    font-size: 16px;
+}
+
+@mixin font-content {
+    color: $LS_GRAY_1;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+    font-size: 16px;
+    line-height: 1.44;
+}
+
+@mixin font-copy {
+    color: $LS_GRAY_1;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+    font-size: 14px;
+    line-height: 1.44;
+}
+
+// @mixin font-h2 {
+//     color: $LS_GRAY_1;
+//     font: 700 24px/28px Roboto;
+// }
+
+// @mixin font-h3 {
+//     color: $LS_GRAY_1;
+//     font: 700 24px/28px Roboto;
+// }
+
+// @mixin font-h4 {
+//     color: $LS_GRAY_1;
+//     font: 700 18px/1 Roboto;
+// }
+
+// @mixin font-h5 {
+//     color: $LS_GRAY_1;
+//     font: 700 18px/1 Roboto;
+// }
+
+// @mixin font-p1 {
+//     color: $LS_GRAY_1;
+//     font: 400 18px/24px Roboto;
+// }
+
+// @mixin font-p2 {
+//     color: $LS_GRAY_5;
+//     font: 400 15px/18px Roboto;
+// }
+
+// @mixin font-p3 {
+//     color: $LS_GRAY_1;
+//     font: 400 15px/24px Roboto;
+// }
+
+// @mixin font-p4 {
+//     color: $LS_GRAY_2;
+//     font: 400 13px/1 Roboto;
+// }
+
+// @mixin font-p5 {
+//     color: $LS_GRAY_2;
+//     font: 400 11px/1 Roboto;
+// }
+
+// @mixin font-p6 {
+//     color: $LS_BLUE_1;
+//     font: 400 18px/24px Roboto;
+// }
+
+// CONTAINER START:
+@mixin container() {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    @include lg {
+        max-width: 1064px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+// CONTAINER END;
+
+// EDITOR START:
+@mixin editor() {
+    em {
+        font-style: italic;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    ol,
+    ul {
+        padding-inline-start: 20px;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+}
+// EDITOR END;

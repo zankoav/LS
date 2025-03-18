@@ -15,8 +15,9 @@ if (!defined('ABSPATH')) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta name="description" content="Мы предлагаем разработку одностраничного сайта любой сложности по низким ценам с гарантией технической поддержки в течении года.">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
     <?php wp_head(); ?>
 
     <!-- Google Tag Manager -->
@@ -41,21 +42,17 @@ if (!defined('ABSPATH')) {
         const landing_ajax = "<?= admin_url('admin-ajax.php'); ?>";
         /** JS */
         <?php
-        $templateName = (wp_is_mobile() ? 'mobile' : 'desktop') . '_post.js';
         $assets = new Assets();
-        echo file_get_contents(__DIR__ . $assets->asset($templateName));
+        echo file_get_contents(__DIR__ . $assets->asset('ls_post.js'));
         ?>
     </script>
 </head>
 
-<body>
+<body class="ls-app">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L6RDDK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <?php
-    $template = wp_is_mobile() ? 'backend/components/mobile/post' : 'backend/components/desktop/post';
-    get_template_part($template);
-    ?>
+    <?php get_template_part('backend/components/post'); ?>
     <?php wp_footer(); ?>
 </body>
 

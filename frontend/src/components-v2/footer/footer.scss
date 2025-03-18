@@ -1,0 +1,17 @@
+@import './../../common/constants-v2';
+
+.footer {
+    display: block;
+    border-top: 1px solid $LS_GRAY_3;
+
+    &__container {
+        @include container;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    &__copy {
+        @include font-copy;
+    }
+}

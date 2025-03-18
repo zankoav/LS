@@ -179,6 +179,16 @@ $MEDIA: (
 
 // EDITOR START:
 @mixin editor() {
+    h4 {
+        color: $LS_GRAY_1;
+        font-family: 'Lora', serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        margin: 16px 0;
+    }
+
     em {
         font-style: italic;
     }
@@ -194,6 +204,16 @@ $MEDIA: (
 
     p {
         margin: 1rem 0;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        height: auto;
+        object-fit: contain;
+        border-radius: 12px;
+        box-shadow: 0px 8px 16px #9299a2;
+        margin: 24px 0;
     }
 }
 // EDITOR END;

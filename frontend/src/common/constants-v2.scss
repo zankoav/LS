@@ -221,5 +221,14 @@ $MEDIA: (
         font-weight: bold;
         text-decoration: underline;
     }
+
+    .wp-block-buttons {
+        margin: 16px 0;
+
+        .wp-block-button__link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
 }
 // EDITOR END;

@@ -62,3 +62,38 @@ function register_service_type()
 }
 
 add_action('init', 'register_service_type');
+
+function register_product_type()
+{
+
+    register_post_type('product', array(
+        'labels'             => array(
+            'name'               => 'Продукт',
+            'singular_name'      => __('Продукта'),
+            'add_new'            => __('Добавить Продукт'),
+            'add_new_item'       => __('Добавить новый Продукт'),
+            'edit_item'          => __('Редактировать Продукт'),
+            'new_item'           => __('Новый Продукт'),
+            'view_item'          => __('Посмотреть Продукт'),
+            'search_items'       => __('Найти Продукт'),
+            'not_found'          => __('Продукт не найден'),
+            'not_found_in_trash' => __('В корзине Продукты не найдено'),
+            'menu_name'          => 'Продукты',
+            'items_archive'      => 'Продукты архив',
+        ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'show_in_nav_menus'  => true,
+        'query_var'          => true,
+        'rewrite'            => array('slug' => 'products', 'with_front' => false),
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 7,
+        'menu_icon'          => 'dashicons-products',
+        'supports'           => array('title', 'editor', 'thumbnail')
+    ));
+}
+
+add_action('init', 'register_product_type');
